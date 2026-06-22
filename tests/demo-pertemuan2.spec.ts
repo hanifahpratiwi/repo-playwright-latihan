@@ -57,7 +57,6 @@ test('test logout', async ({ page }) => {
   await expect(page.locator('[data-test="logout-sidebar-link"]')).toBeVisible();
   await expect(page.locator('[data-test="reset-sidebar-link"]')).toBeVisible();
 
-
   // click the logout link and assert that the user is redirected to the login page 
   await page.locator('[data-test="logout-sidebar-link"]').click();
 });
